@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<head>
+    <title>RISE Purity Test</title>
+    <meta name="description" content="A Fake Rice Purity Test">
+    <!-- <meta name="keywords"
+        content="rice purity test, rice purity, Rice Purity Test, Rice purity, Rice purity test, Rice purity test">
+    <meta name="theme-color" content="#08526e"> -->
+    <!--Was too lazy to link the image somewhere else-->
+    <!--Main scipt-->
+    <script src="script.js"></script>
+    <!--CSS-->
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="stylesheet" href="inter.css" />
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+</head>
+<html>
+
+<body>
+    <div class="main">
+        <h1>RISE Purity Test</h1>
+        <br>
+        <div id="score"></div>
+        <br>
+        <!-- <div id="meaning"></div> -->
+        <br><br>
+        <div id="buttondiv">
+            <input class="button" id="refresh" type="submit" value="Clear Page" onClick="clearPage()">
+        </div>
+        <br>
+        <div id="list">
+            <ol>
+                <li> <input type="checkbox" id="1"> gotten covid
+                <li> <input type="checkbox" id="2"> slept in the same room as a person who has covid
+                <li> <input type="checkbox" id="3"> gotten covid from your covid-positive roommate
+                <li> <input type="checkbox" id="4"> not gotten covid from your covid-positive roommate (somehow)
+                <li> <input type="checkbox" id="5"> ran food to someone who has covid
+                <li> <input type="checkbox" id="6"> been in an elevator with someone who has covid
+                <li> <input type="checkbox" id="7"> had your PA have covid
+                <li> <input type="checkbox" id="8"> gotten your positive covid test back during lab
+                <li> <input type="checkbox" id="9"> had a floor meeting on zoom because of covid
+                <li> <input type="checkbox" id="10"> fainted / passed out
+                <li> <input type="checkbox" id="11"> gotten hit by a bike
+                <li> <input type="checkbox" id="12"> gotten hit by a car
+                <li> <input type="checkbox" id="13"> gotten hit by a bus/train
+                <li> <input type="checkbox" id="14"> been in one of the ambulances
+                <li> <input type="checkbox" id="15"> not eaten because you were too lazy to walk to Marciano's
+                <li> <input type="checkbox" id="16"> overslept breakfast at Marciano's
+                <li> <input type="checkbox" id="17"> made extremely bizarre combinations of food out of desperation at Marciano's
+                <li> <input type="checkbox" id="18"> only ate ice cream at Marciano's because everything else was mid
+                <li> <input type="checkbox" id="19"> had to go on a quest to find a fork at Marciano's
+                <li> <input type="checkbox" id="20"> had to go to multiple different beverage stations to find a working ice dispenser
+                <li> <input type="checkbox" id="21"> gotten your boxed lunch order messed up
+                <li> <input type="checkbox" id="22"> gone to the gym
+                <li> <input type="checkbox" id="23"> been peer pressured into going to the gym for the first time
+                <li> <input type="checkbox" id="24"> bought a gym pass and then never used it
+                <li> <input type="checkbox" id="25"> developed a crush on someone in the gym
+                <li> <input type="checkbox" id="26"> gone to the gym just to avoid life problems
+                <li> <input type="checkbox" id="27"> spent more hours at the gym than in lab
+                <li> <input type="checkbox" id="28"> gotten injured at the gym
+                <li> <input type="checkbox" id="29"> snuck someone into the gym / been snuck into the gym
+                <li> <input type="checkbox" id="30"> gotten fined for sneaking someone into the gym
+                <li> <input type="checkbox" id="31"> couldn't find your room on the first day
+                <li> <input type="checkbox" id="32"> had to take the stairs because the elevators were too full
+                <li> <input type="checkbox" id="33"> gotten locked out of your room
+                <li> <input type="checkbox" id="34"> failed card swipe three or more times in a row
+                <li> <input type="checkbox" id="35"> lost your key / ID
+                <li> <input type="checkbox" id="36"> used someone else's key / ID
+                <li> <input type="checkbox" id="37"> been in a phantom elevator that stopped at the 7th floor
+                <li> <input type="checkbox" id="38"> went into the dorm of the opposite gender
+                <li> <input type="checkbox" id="39"> moved your mattress outside your room
+                <li> <input type="checkbox" id="40"> slept outside your room
+                <li> <input type="checkbox" id="41"> slept in Melville Lounge
+                <li> <input type="checkbox" id="42"> slept on a couch bed at the gsu lounge
+                <li> <input type="checkbox" id="43"> slept on the laundry room floor
+                <li> <input type="checkbox" id="44"> had picture curfew
+                <li> <input type="checkbox" id="45"> had no curfew
+                <li> <input type="checkbox" id="46"> missed curfew
+                <li> <input type="checkbox" id="47"> left your dorm unlocked for an extended period of time
+                <li> <input type="checkbox" id="48"> had your room broken into / broken into another students room
+                <li> <input type="checkbox" id="49"> pulled an all nighter
+                <li> <input type="checkbox" id="50"> gone off campus without telling your PA
+                <li> <input type="checkbox" id="51"> gone off campus alone
+                <li> <input type="checkbox" id="52"> showered with cold water
+                <li> <input type="checkbox" id="53"> showered with low-pressure water
+                <li> <input type="checkbox" id="54"> fallen in the shower
+                <li> <input type="checkbox" id="55"> accidentally flashed someone in the bathrooms / been flashed in the bathrooms
+                <li> <input type="checkbox" id="56"> intentionally flashed someone in the bathrooms / been intentionally flashed in the bathrooms
+                <li> <input type="checkbox" id="57"> actually used the bathroom lockers
+                <li> <input type="checkbox" id="58"> seen the piss sink on the ninth floor of C tower via image
+                <li> <input type="checkbox" id="59"> seen the piss sink on the ninth floor of C tower in person
+                <li> <input type="checkbox" id="60"> pissed in the piss sink
+                <li> <input type="checkbox" id="61"> washed your hands at the piss sink
+                <li> <input type="checkbox" id="62"> brushed your teeth at the piss sink
+                <li> <input type="checkbox" id="63"> washed your hands using the piss in the piss sink
+                <li> <input type="checkbox" id="64"> brushed your teeth using the piss in the piss sink
+                <li> <input type="checkbox" id="65"> drunk the piss out of the piss sink
+                <li> <input type="checkbox" id="66"> seen a pad / tampon left on the floor of the bathroom
+                <li> <input type="checkbox" id="67"> left a pad / tampon the the floor of the bathroom
+                <li> <input type="checkbox" id="68"> sent or received mail
+                <li> <input type="checkbox" id="69"> sent or received mail incorrectly
+                <li> <input type="checkbox" id="70"> found silverfish in your room
+                <li> <input type="checkbox" id="71"> found mice in your room
+                <li> <input type="checkbox" id="72"> been evacuated by a fire alarm
+                <li> <input type="checkbox" id="73"> been partially naked during evacuation
+                <li> <input type="checkbox" id="74"> been completely naked during evacuation
+                <li> <input type="checkbox" id="75"> caused a fire alarm
+                <li> <input type="checkbox" id="76"> caused a fire alarm by microwaving a fork
+                <li> <input type="checkbox" id="77"> stuck your head in a fridge/freezer for an extended period of time
+                <li> <input type="checkbox" id="78"> destroyed your lanyard in some way
+                <li> <input type="checkbox" id="79"> been woken up by loud construction noises
+                <li> <input type="checkbox" id="80"> had your PA leave in the middle of the program
+                <li> <input type="checkbox" id="81"> failed at laundry or witness someone fail at laundry
+                <li> <input type="checkbox" id="82"> put a tide pod in the laundry drawer
+                <li> <input type="checkbox" id="83"> squeezed the detergent out of a tide pod
+                <li> <input type="checkbox" id="84"> had to beg someone else for quarters for laundry / been begged for quarters to do laundry
+                <li> <input type="checkbox" id="85"> ran out of clothes halfway through the week
+                <li> <input type="checkbox" id="86"> didn't do your laundry for the entire program
+                <li> <input type="checkbox" id="87"> had your laundry stolen / stolen someone's laundry
+                <li> <input type="checkbox" id="88"> climbed on top of a washing machine / dryer
+                <li> <input type="checkbox" id="89"> climbed into a washing machine / dryer
+                <li> <input type="checkbox" id="90"> laughed at someone slipping on the TV room ceiling leak
+                <li> <input type="checkbox" id="91"> slipped on the TV room ceiling leak
+                <li> <input type="checkbox" id="92"> went to a building only to find it was closed
+                <li> <input type="checkbox" id="93"> stayed in a building past closing
+                <li> <input type="checkbox" id="94"> stayed in a building past closing and gotten aggressively chased out by maintenance
+                <li> <input type="checkbox" id="95"> walked an average of >15k steps a day
+                <li> <input type="checkbox" id="96"> missed the bus to med campus
+                <li> <input type="checkbox" id="97"> gotten on the wrong T train
+                <li> <input type="checkbox" id="98"> gotten on the wrong T train multiple times in one trip
+                <li> <input type="checkbox" id="99"> snuck someone onto the T using your Charlie card or been snuck onto the T using someone else's Charlie card
+                <li> <input type="checkbox" id="100"> gone on a Target run 3 or more days in a row
+                <li> <input type="checkbox" id="101"> went into Target or other establishments 5 minutes before closing
+                <li> <input type="checkbox" id="102"> gotten Insomnia Cookies for dinner because this entire city closes at 8pm
+                <li> <input type="checkbox" id="103"> been yelled at by a retail worker
+                <li> <input type="checkbox" id="104"> jaywalked
+                <li> <input type="checkbox" id="105"> jaywalked across a highway
+                <li> <input type="checkbox" id="106"> jaywalked in front of a police car
+                <li> <input type="checkbox" id="107"> went to Boston College by accident
+                <li> <input type="checkbox" id="108"> touched the seal and ran 10 seconds to the church
+                <li> <input type="checkbox" id="109"> chased the rabbits on campus
+                <li> <input type="checkbox" id="110"> chased the geese on campus
+                <li> <input type="checkbox" id="111"> stepped in goose feces
+                <li> <input type="checkbox" id="112"> been to a non-BU beach beach
+                <li> <input type="checkbox" id="113"> gone to Chinatown
+                <li> <input type="checkbox" id="114"> eaten asian food three or more nights in a row
+                <li> <input type="checkbox" id="115"> been diagnosed with a mental illness
+                <li> <input type="checkbox" id="116"> been diagnosed with 2 mental illnesses
+                <li> <input type="checkbox" id="117"> been diagnosed with 3 or more mental illnesses
+                <li> <input type="checkbox" id="118"> been diagnosed with a mental illness while at RISE
+                <li> <input type="checkbox" id="119"> had a mental breakdown in the stairwell
+                <li> <input type="checkbox" id="120"> had mommy issues
+                <li> <input type="checkbox" id="121"> had daddy issues
+                <li> <input type="checkbox" id="122"> trauma dumped on other students
+                <li> <input type="checkbox" id="123"> staged an intervention for another student / had an intervention staged on you
+                <li> <input type="checkbox" id="124"> underwent a major hair transformation while at RISE, especially past midnight
+                <li> <input type="checkbox" id="125"> drank non-water beverages / ate in the library
+                <li> <input type="checkbox" id="126"> joked about the riding a bike without a helmet policy
+                <li> <input type="checkbox" id="127"> rode a bike without a helmet
+                <li> <input type="checkbox" id="128"> made fun of the SSP no-dating rule
+                <li> <input type="checkbox" id="129"> gotten scolded by PROMYS kids for being too loud
+                <li> <input type="checkbox" id="130"> made a meme about RISE
+                <li> <input type="checkbox" id="131"> made a meme about RISE covid policies specifically
+                <li> <input type="checkbox" id="132"> posted on a summer@BU-related social media account
+                <li> <input type="checkbox" id="133"> emailed Michael bestie
+                <li> <input type="checkbox" id="134"> destroyed your free BU Summer Program shirts
+                <li> <input type="checkbox" id="135"> purchased the superior student-designed <a href = https://my-store-cdb610.creator-spring.com/listing/bu-rise-22-shirt>RISE t-shirts</a>
+                <li> <input type="checkbox" id="136"> been late to monday workshop
+                <li> <input type="checkbox" id="137"> skipped monday workshop entirely
+                <li> <input type="checkbox" id="138"> had someone else say “here” for you or sign you in at monday workshop attendance
+                <li> <input type="checkbox" id="139"> fallen asleep at Monday workshop (in clear line of sight of the presenter)
+                <li> <input type="checkbox" id="140"> hit the BU dean of admissions in the face with a dodgeball
+                <li> <input type="checkbox" id="141"> left mandatory events right after attendance
+                <li> <input type="checkbox" id="142"> snuck out of the dance
+                <li> <input type="checkbox" id="143"> been yelled at by a security guard
+                <li> <input type="checkbox" id="144"> faced disciplinary consequences at RISE
+                <li> <input type="checkbox" id="145"> been expelled from RISE
+                <li> <input type="checkbox" id="146"> been blacklisted from BU / other Boston colleges
+                <li> <input type="checkbox" id="147"> read research papers instead of doing real research
+                <li> <input type="checkbox" id="148"> fallen asleep during lab (while sitting)
+                <li> <input type="checkbox" id="149"> fallen asleep during lab (while standing)
+                <li> <input type="checkbox" id="150"> forgotten everything from bioraft
+                <li> <input type="checkbox" id="151"> never actually did bioraft
+                <li> <input type="checkbox" id="152"> had a lab accident of some kind
+                <li> <input type="checkbox" id="153"> been ghosted by your professor
+                <li> <input type="checkbox" id="154"> ghosted your professor
+                <li> <input type="checkbox" id="155"> turned in your abstract late
+                <li> <input type="checkbox" id="156"> never turned in your abstract
+                <li> <input type="checkbox" id="157"> turned in your poster late
+                <li> <input type="checkbox" id="158"> never turned in your poster
+                <li> <input type="checkbox" id="159"> procrastinated on your college applications
+                <li> <input type="checkbox" id="160"> joined meetings for other things while at RISE
+                <li> <input type="checkbox" id="161"> broken or damaged technology of any kind
+                <li> <input type="checkbox" id="162"> broken or damaged BU property
+                <li> <input type="checkbox" id="163"> skipped a grade
+                <li> <input type="checkbox" id="164"> anti-skipped a grade
+                <li> <input type="checkbox" id="165"> been bullied by other students
+                <li> <input type="checkbox" id="166"> made friends
+                <li> <input type="checkbox" id="167"> not made friends
+                <li> <input type="checkbox" id="168"> hated on the other programs
+                <li> <input type="checkbox" id="169"> been annoyed by summer challenge kids
+                <li> <input type="checkbox" id="170"> known what butta dawg is
+                <li> <input type="checkbox" id="171"> been / met someone from the bay area or new jersey
+                <li> <input type="checkbox" id="172"> fought with another student
+                <li> <input type="checkbox" id="173"> fought with another student physically
+                <li> <input type="checkbox" id="174"> made another student cry / cried because of another student
+                <li> <input type="checkbox" id="175"> been T'd or T'd someone
+                <li> <input type="checkbox" id="176"> ran into someone from your school
+                <li> <input type="checkbox" id="177"> ran away from someone from your school
+                <li> <input type="checkbox" id="178"> played video games instead of talking to your friends
+                <li> <input type="checkbox" id="179"> done math instead of talking to your friends
+                <li> <input type="checkbox" id="180"> cried in your room instead of talking to your friends
+                <li> <input type="checkbox" id="181"> neglected to call your parents for a week or more
+                <li> <input type="checkbox" id="182"> been visited by your family
+                <li> <input type="checkbox" id="183"> been kidnapped by your family (leave request)
+                <li> <input type="checkbox" id="184"> been shipped with another student at RISE
+                <li> <input type="checkbox" id="185"> had a fling at RISE
+                <li> <input type="checkbox" id="186"> gotten into a serious relationship at RISE
+                <li> <input type="checkbox" id="187"> had a breakup at RISE
+                <li> <input type="checkbox" id="188"> had to go long distance for RISE
+                <li> <input type="checkbox" id="189"> had a crush on someone at RISE
+                <li> <input type="checkbox" id="190"> had a crush on someone at RISE and never talked to them
+                <li> <input type="checkbox" id="191"> had a date to the dance
+                <li> <input type="checkbox" id="192"> committed / witnessed an act of PDA
+                <li> <input type="checkbox" id="193"> been gay
+                <li> <input type="checkbox" id="194"> had a gay awakening or witnessed a gay awakening
+                <li> <input type="checkbox" id="195"> gasligted someone into having a gay awakening / been gaslighted into having a gay awakening
+                <li> <input type="checkbox" id="196"> been asian
+                <li> <input type="checkbox" id="197"> been named andrew or matthew or keira
+                <li> <input type="checkbox" id="198"> been lactose intolerant
+                <li> <input type="checkbox" id="199"> threatened to do / joked about doing another student's mother
+                <li> <input type="checkbox" id="200"> actually done another student's mother
+            </ol>
+
+            <input class="button" id="submit" type="submit" value="Calculate Score" onClick="calculateScore()">
+            <input class="button" id="reset" type="submit" value="Clear Boxes" onClick="clearBoxes()">
+            <!-- <h5><a href="https://ricepurity.github.io" target="_blank">Original Rice Purity Test</a><br><a href="https://www.society19.com/the-rice-purity-test/#:~:text=As%20I%20mentioned%20earlier%2C%20the,re%20as%20pure%20as%20gold." target="_blank">Score Meanings</a><br><a href="https://kacp3r.xyz" target="_blank">Check Out More of my Projects</a></h5> -->
+            <!-- <div> -->
+        </div>
+    </div>
+</body>
+
+</html>
